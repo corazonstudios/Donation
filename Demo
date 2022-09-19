@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Donation</title>
+    <style>
+    
+   :root{
+    --themeRed: #d10718;
+    --gray:#efefef;
+}
+
+button, body{
+        font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size:14px;
+    line-height: 26px;
+}
+
+/* End of Root settings */
+
+.fullsection{
+    width: 100%;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.sectiontitle{
+     /* width: 300px; */
+     border-bottom: 1px solid var(--themeRed);
+     text-align: center;
+     font-size: 2rem;
+     font-weight: 300;
+     margin: 0 auto 45px;
+     position: relative;
+     padding: 10px 0;
+     text-transform: uppercase;
+     
+}
+
+section{
+    padding:100px 0;
+    position: relative;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 2;
+}
+
+header .container{
+    display: flex;
+ justify-content: space-between;
+}
+
+header .container .logo{
+    padding: 15px 0;
+    height: 75px;
+    cursor: pointer;
+}
+
+header .container .logo img{
+    height: 100%;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: 0.3s linear;
+}
+
+header nav ul li a:hover{
+    background-color: var(--themeRed);
+}
+
+.banner{
+    min-height: 100vh; 
+    width: 100%; 
+    background-image: url("https://images.pexels.com/photos/38634/girl-ethiopian-child-portrait-38634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover; background-attachment: fixed;
+}
+
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 300;
+}
+
+.banner span{
+background-color: var(--themeRed);
+font-weight: 600;
+padding: 0 15px;
+display: inline-block;
+line-height: 3.5rem;
+border-radius: 5px;
+}
+
+.banner p{
+    color: #fff;
+    line-height: 1.5rem;
+    margin: 15px 0 20px;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+}
+
+.banner button{
+    background-color: var(--themeRed);
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    padding: 10px 15px;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* End of home section */
+
+#aboutsection .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+
+}
+
+#aboutsection .cards > div:hover{
+    width: 400px;
+    margin-top: -20px;
+   border-color: var(--themeRed);
+    padding: 55px;
+    height: auto;
+
+}
+
+#aboutsection .cards .donationbox, .voluteerbox, .scholarshipbox{
+    width: 350px;
+    background-color: var(--gray);
+    padding: 35px;
+    color: #444 ;
+    text-align: center;
+    border-radius: 15px;
+    height: 215px;
+    border: 1px solid #ccc;
+}
+
+#aboutsection .cards .title{
+font-size: 18px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+#aboutsection .cards p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#aboutsection .cards button{
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: var(--themeRed);
+    color: #fff;
+    border: none;
+}
+
+#aboutsection .cards button:hover{
+    background-color: black;
+    color: #fff;
+    border: none;
+}
+
+/* End of About section */
+
+.program{
+    background-color: var(--gray);
+}
+
+.program .boxcontainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+/* display: flex;
+flex-wrap: wrap;
+gap: 100px; */
+}
+
+.program .boxcontainer .box{
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px; border-radius: 5px; box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative; margin-bottom: 15px;
+}
+
+.program .boxcontainer .box .cardimage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; 
+    border-radius: 5px 5px 0 0;
+}
+
+.program .boxcontainer .box .cardimage:after{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.program .boxcontainer .box:nth-child(1) .cardimage,
+.program .boxcontainer .box:nth-child(1) .cardimage:after {
+background-image: url("https://images.pexels.com/photos/1427430/pexels-photo-1427430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");  
+}
+
+.program .boxcontainer .box:nth-child(2) .cardimage,
+.program .boxcontainer .box:nth-child(2) .cardimage:after {
+background-image: url("https://images.pexels.com/photos/2351856/pexels-photo-2351856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");  
+}
+
+.program .boxcontainer .box:nth-child(3) .cardimage,
+.program .boxcontainer .box:nth-child(3) .cardimage:after {
+background-image: url("https://images.pexels.com/photos/796526/pexels-photo-796526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");  
+}
+
+.program .boxcontainer .box:nth-child(4) .cardimage,
+.program .boxcontainer .box:nth-child(4) .cardimage:after {
+background-image: url("https://images.pexels.com/photos/3092648/pexels-photo-3092648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");  
+}
+
+.program .boxcontainer .box:hover .cardimage:after {
+    top: 100%;
+}
+
+.program .boxcontainer .box .programtitle{
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+.program .boxcontainer .box .donationcount{
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+    margin-top: 10px;
+}
+
+.program .boxcontainer .box .donationcount span{
+    color: var(--themeRed);
+    font-weight: 600;
+}
+
+.program .boxcontainer .box button{
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: var(--themeRed);
+    color: #fff;
+    border: none;
+}
+
+.program .boxcontainer .box button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* End of program section */
+
+.education{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.education .videoPlayer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.education .sectiontitle{
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+
+.education .educationcontainer{
+    background-color: #00000096;
+    position: absolute;
+    width: 600px;
+    top: 35vh;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+}
+
+.education .educationcontainer h3{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.education .educationcontainer strong:hover{
+    color: var(--themeRed);
+    cursor: auto;
+}
+
+.education .educationcontainer button{
+     outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: var(--themeRed);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+.education .educationcontainer button:hover{
+    background-color: #fff;
+    color:var(--themeRed);
+    font-weight: bold;
+}
+
+.education .educationcontainer p{
+    line-height: 20px;
+}
+
+/* Education section ends */
+
+.gallery .gallerycontainer{
+    column-count: 4;
+    column-gap: 20px;
+}
+
+.gallery .gallerycontainer .item{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .gallerycontainer img{
+    width: 100%;
+    display: block;
+    transition: .4s;
+}
+
+.gallery .gallerycontainer .title{
+    position: absolute;
+    background-color: var(--gray);
+    padding: 5px; margin: 5px; border-radius: 5px; font-size: 13px; font-weight: bold; opacity: 0; z-index: 1;
+    transition: .4s; display: none;
+}
+
+.gallery .gallerycontainer .item:hover img{
+    transform: scale(1.2);
+}
+
+/* gallery section end */
+
+.join{
+    /* background-image: url("/new website/images/pattern.jpg"); */
+    color:#fff;
+    background-color: var(--themeRed);
+}
+
+.join .jointitle{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.join .jointitle span{
+    font-weight: 800;
+}
+
+.join button{
+     outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+}
+
+.join button:hover{
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Join section end */
+
+footer{
+    background-color: #000;
+    color: rgb(166, 166, 166);
+    padding: 50px 0;
+    font-size: 14px;
+
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+   
+}
+
+footer .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px soild;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+
+footer p{
+    margin-bottom: 10px;
+
+}
+
+footer .linkscontainer ul{
+    list-style-type: none;
+}
+
+footer .linkscontainer ul li a{
+    text-decoration: none;
+    color: #7f7f7f;
+    display: inline-block;
+    line-height: 30px;
+}
+
+footer .linkscontainer ul li a:hover{
+    color: white;
+}
+footer .linkscontainer, .connectcontainer .title span{
+    color: whitesmoke;
+}
+
+footer .newslettercontainer img{
+    height: 25px;
+    margin-bottom: 11px;
+}
+
+footer .newslettercontainer input{
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 200;
+}
+footer .newslettercontainer button{
+     outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: var(--themeRed);
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+}
+
+footer .newslettercontainer button:hover{
+background-color: #fff;
+color: #000;
+font-weight: 500;
+}
+
+footer .newslettercontainer h3{
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 12px;
+    color: whitesmoke;
+}
+/* footer ends here */
+
+
+/*starts Media Query */
+
+@media screen and (max-width: 1140px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .education .videoPlayer{
+        width: 1280px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+.banner h1{
+    margin-top: 200px;
+}
+#aboutsection .cards{
+    justify-content: space-around;
+    height: auto;
+}
+#aboutsection .cards > div{
+    margin: 10px 0;
+}
+}
+    
+@media screen and (max-width: 1024px){
+    .banner{
+        background-position-x: 45%;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+    }
+    .program .boxcontainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    header nav{
+        position: relative;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    header nav:after{
+      top: 17px;
+    }
+
+    header nav:before{
+  top: 7px;
+    }
+    
+    header nav:after, 
+    header nav:before{
+content: "";
+height: 2px;
+width:17px;
+background-color: #fff;
+display: block;
+position: absolute;
+left: 5px;
+}
+    header nav ul {
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: .5s;
+    }
+
+    header nav:hover ul{
+        right: 0;
+    }
+    header nav ul li{
+        display: block;
+    }
+header nav ul li a {
+    width: 300px;
+    background-color: rgba(0,0,0,0.6);
+}
+.banner{
+    background-position-x: 65%;
+}
+
+.banner p{
+    font-size: 14px;
+}
+.banner p,
+.banner h1 {
+    width: 70%;
+}
+#aboutsection .cards > div:hover{
+    width: 350px;
+}
+
+.education .educationcontainer{
+    width: 96%;
+}
+.education .educationcontainer h3{
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.education .educationcontainer p{
+    margin: 10px 0 20px;
+}
+
+.gallery .gallerycontainer{
+    column-count: 2;
+}
+
+
+}
+
+@media screen and (max-width: 425px){
+.banner h1{
+    margin-top: 150px;
+    font-size:2rem;
+    line-height: 3rem;
+}
+.banner button{
+    margin-bottom: 10px;
+}
+#aboutsection p{
+    text-align: justify;
+}
+
+#aboutsection .cards > div:hover{
+    width: 400px;
+    margin-top: 10px;
+    padding: 35px;
+}
+
+.program .boxcontainer{
+    grid-template-columns:1fr;
+}
+
+.education .videoPlayer{
+    width: 1400px;
+}
+
+.education .educationcontainer{
+    width: 93%;
+}
+
+.gallery .gallerycontainer{
+    column-count: 1;
+}
+
+footer .container{
+    grid-template-columns: 1fr;
+}
+
+}
+@media screen and (max-width: 320px){
+    .education .educationcontainer h3{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .education .educationcontainer button{
+      
+    }
+    .banner h1{
+margin-top: 100px;
+    }
+}
+   
+    </style>
+</head>
+<body>
+  <div class="fullcontainer banner" id="homesection">
+    <header>
+        <div class="container">
+            <div class="logo">
+            <a href="#homesection"><img src="https://www.kindpng.com/picc/m/764-7646968_ngo-transparent-ngo-icon-png-png-download.png" alt="Company logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#homesection">Home</a>
+                    </li>
+                    <li>
+                        <a href="#aboutsection">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#programsection">Programs</a>
+                    </li>
+                    <li>
+                        <a href="#educationsection">Education</a>
+                    </li>
+                    <li>
+                        <a href="#gallerysection">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#joinsection">Join Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Header ends here-->
+
+    <div class="container">
+        <h1>Together we can <span>Save Lives</span></h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam rerum dolore dolor 
+            repellat excepturi architecto vero deleniti praesentium, rem beatae quod fuga debitis 
+            dolorem in illo. Sit quibusdam, obcaecati saepe nihil 
+            nam sed eos velit blanditiis est veritatis a nemo.</p>
+            
+           <a href="https://www.paypal.com/donate/?hosted_button_id=79NB2XJE4EW4Y" target="_blank"> <button>Donate Now</button> </a>
+    </div>
+  </div>
+
+  <!--homeSection end here-->
+
+<section class="fullcontainer" id="aboutsection">
+
+<div class="container">
+    <h2 class="sectiontitle">About Us</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam quis magni 
+        totam reiciendis tempore, fugit iusto labore vitae minima culpa excepturi
+         perferendis quos nesciunt sit, velit in hic aliquam unde molestias eos
+        eius obcaecati nobis. Facere impedit
+         necessitatibus blanditiis eligendi, quasi totam,
+         neque ducimus assumenda voluptatem explicabo beatae culpa.
+    </p>
+
+<div class="cards">
+    <div class="donationbox">
+     <div class="title">Give Donation</div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <a href="https://www.paypal.com/donate/?hosted_button_id=79NB2XJE4EW4Y" target="_blank"> <button>Donate Now</button>
+    </a>
+    </div>
+   <!-- Donation ends here -->
+
+
+    <div class="voluteerbox">
+        <div class="title">Become a Voluteer</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button>
+            Become Now
+        </button>
+    </div>
+    <!-- Donation ends here -->
+
+    
+        <div class="scholarshipbox">
+            <div class="title">Give Scholarship</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=79NB2XJE4EW4Y" target="_blank"> <button>Give Immediately</button>
+            </a>
+        </div>
+        <!-- Donation ends here -->
+   
+</div>
+
+
+</div>
+
+</section>
+
+<!--AboutSection end here-->
+
+<section class="program" id="programsection">
+    <div class="container">
+        <h2 class="sectiontitle">Programs</h2>
+    
+        <div class="boxcontainer">
+            <div class="box">
+                <div class="cardimage"></div>
+                <div class="programtitle">Education to every child</div>
+                <div class="donationcount">
+                    Donation Goal : <span>$9845</span>
+                </div>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=79NB2XJE4EW4Y" target="_blank"> <button>Donate Now</button>
+            </a>
+            </div>
+
+            <div class="box">
+                <div class="cardimage"></div>
+                <div class="programtitle">Make life easier for them</div>
+                <div class="donationcount">
+                    Donation Goal : <span>$9845</span>
+                </div>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=79NB2XJE4EW4Y" target="_blank"> <button>Donate Now</button>
+                </a>
+            </div>
+
+            <div class="box">
+                <div class="cardimage"></div>
+                <div class="programtitle">Dedicating to helping kids</div>
+                <div class="donationcount">
+                    Donation Goal : <span>$9845</span>
+                </div>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=79NB2XJE4EW4Y" target="_blank"> <button>Donate Now</button>
+                </a>
+            </div>
+
+            <div class="box">
+                <div class="cardimage"></div>
+                <div class="programtitle">Clean Water for people</div>
+                <div class="donationcount">
+                    Donation Goal : <span>$9845</span>
+                </div>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=79NB2XJE4EW4Y" target="_blank"> <button>Donate Now</button>
+                </a>
+            </div>
+            
+            <!-- Box ends here -->
+
+        </div>
+        <!-- BoxContainer ends here -->
+    </div>
+
+</section>
+
+ <!-- ProgramSection ends here  -->
+
+<section class="education" id="educationsection">
+
+
+<!-- <video autoplay muted loop class="videoPlayer">
+    <source src="/new website/video/childrens.mp4" type="video/mp4" />
+    your browser does not support HTML5 video
+</video> -->
+ <img src="https://images.pexels.com/photos/1029783/pexels-photo-1029783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="kids" class="videoPlayer">
+
+<div class="container">
+    <div class="sectiontitle">Education</div>
+
+    <div class="educationcontainer">
+        <h3>
+            Education is Essential for <br> <strong>
+                BETTER FUTURE
+            </strong>
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            In doloribus cumque reiciendis nihil esse ex similique delectus 
+            magni, totam unde voluptates assumenda? Quasi quidem,
+            labore nostrum corrupti molestias odio fugit distinctio 
+            
+        </p>
+        <button>EXPLORE NOW</button>
+    </div>
+
+</div>
+
+</section>
+
+ <!-- EducationSection ends here  -->
+
+<section class="gallery" id="gallerysection">
+    <div class="container">
+        <div class="sectiontitle">Gallery</div>
+
+        <div class="gallerycontainer">
+            <div class="item">
+              <span class="title">Image Title</span>
+              <img src="https://images.pexels.com/photos/38634/girl-ethiopian-child-portrait-38634.jpeg" alt="Image one">
+            </div>
+
+            <div class="item">
+              <span class="title">Image Title</span>
+              <img src="https://images.pexels.com/photos/1108821/pexels-photo-1108821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image two">
+            </div>
+
+            <div class="item">
+              <span class="title">Image Title</span>
+              <img src="https://images.pexels.com/photos/2413238/pexels-photo-2413238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image three">
+            </div>
+
+            <div class="item">
+              <span class="title">Image Title</span>
+              <img src="https://images.pexels.com/photos/2883380/pexels-photo-2883380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image four">
+            </div>
+
+            <div class="item">
+              <span class="title">Image Title</span>
+              <img src="https://images.pexels.com/photos/2927675/pexels-photo-2927675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image five">
+            </div>
+
+            <div class="item">
+              <span class="title">Image Title</span>
+              <img src="https://images.pexels.com/photos/5196013/pexels-photo-5196013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image six">
+            </div>
+            <div class="item">
+              <span class="title">Image Title</span>
+              <img src="https://images.pexels.com/photos/11834957/pexels-photo-11834957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image seven">
+            </div>
+            <div class="item">
+              <span class="title">Image Title</span>
+              <img src="https://images.pexels.com/photos/5289489/pexels-photo-5289489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image eight">
+            </div>
+
+            <!-- item ends here -->
+        </div>
+    </div>
+</section>
+
+ <!-- GallerySection ends here  -->
+
+<section class="join" id="joinsection">
+    <div class="container">
+        <div class="jointitle">
+            ADOPT A CHILD & <span>SAVE LIVES</span> 
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur provident doloribus quisquam nobis sunt possimus cumque 
+            tenetur asperiores doloremque odit nemo eaque libero, alias itaque 
+            ipsa fuga dolor earum eveniet.
+        </p>
+        <button class="joinnow">JOIN US NOW</button>
+        <button class="adopt">ADOPT A CHILD</button>
+    </div>
+</section>
+
+ <!-- JoinUsSection ends here  -->
+
+<footer>
+    <div class="container">
+        <div class="newslettercontainer">
+        <a href="#homesection"> <img src="https://www.kindpng.com/picc/m/764-7646968_ngo-transparent-ngo-icon-png-png-download.png" alt=""> </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, harum.</p>
+            <form id="" action="#" method="post">
+            <input type="email" placeholder="Enter Your Email Address" id="" required>
+            <button type="submit" name="submit" >Submit</button>
+        </form>
+            <h3> SUBSCRIBE TO RECEIVE OUR NEWSLETTER</h3>
+        </div>
+<!-- Newslettercontainer -->
+
+<div class="linkscontainer">
+<div class="title"> <span> Useful Links </span></div>
+    <ul>
+        <li>
+            <a href="#homesection">Home</a>
+        </li>
+        <li>
+            <a href="#aboutsection">About Us</a>
+        </li>
+        <li>
+            <a href="#programsection">Programs</a>
+        </li>
+        <li>
+            <a href="#educationsection">Education</a>
+        </li>
+        <li>
+            <a href="#gallerysection">Gallery</a>
+        </li>
+        <li>
+            <a href="#joinsection">Join Us</a>
+        </li>
+    </ul>
+    </div>
+<!-- linkscontainer -->
+
+<div class="connectcontainer">
+    <div class="title"><span> Connect with us</span></div>
+    <p>Lorem, ipsum, dolor, sit amet, <br> 1212003, consectetur.</p>
+    <p>info@ngo.com</p>
+    <p>(+91) 123 456 7890</p>
+
+</div>
+<!-- connectcontainer -->
+
+
+    </div>
+
+</footer>
+
+<!-- Footer ends here -->
+
+</body>
+</html>
